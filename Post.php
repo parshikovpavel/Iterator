@@ -22,7 +22,7 @@ class Post {
 	 * Массив из элементов ['title'=>..,'content'=>...,'publicateDate'=>...]
 	 * @param array $config конфигурация объекта
 	 */	
-	public function __construct($config) {
+	public function __construct(array $config) {
 		foreach($config as $name => $value) {
 			$propertyName = '_'.$name;
 			if(!property_exists($this, $propertyName))
